@@ -213,7 +213,13 @@ img {
     margin: 0 auto;
 }
 
-button {
+.b1 {
     width: 100%;
     font-size: 36px;
+}
+
+.b2 {
+    width: 100%;
+    font-size: 36px;
+    display: none;
 }
