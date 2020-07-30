@@ -137,7 +137,6 @@ img {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     padding: 30px;
-    display: none;
 }
 
 @keyframes bg {
