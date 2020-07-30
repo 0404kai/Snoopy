@@ -137,6 +137,7 @@ img {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     padding: 30px;
+    display: none;
 }
 
 @keyframes bg {
@@ -205,4 +206,14 @@ img {
 .stairs {
     width: 300px;
     transform: scaleX(-1);
+}
+
+.button {
+    width: 700px;
+    margin: 0 auto;
+}
+
+button {
+    width: 100%;
+    font-size: 32px;
 }
