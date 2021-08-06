@@ -1,0 +1,444 @@
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+// reset
+
+.button {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.b1, .b2 {
+    width: 100%;
+    font-size: 36px;
+    border: none;
+    background: linear-gradient(to bottom right,rgba(99, 231, 225, 0.671),rgba(54, 252, 54, 0.671));
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+
+
+.box {
+    max-width: 700px;
+    height: 400px;
+    border-radius: 3%;
+    margin: 30px auto;
+    position: relative;
+    background:center url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    padding: 30px;
+    display: none;
+}
+
+.wrap{
+    animation-name: wrap;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes wrap{
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.snoopy{
+    background: url(../img/snoopy2.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+.snoopy2{
+    background: url(../img/snoopy.gif) no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.bubble1, .bubble2, .bubble3{
+    background: url(../img/氣泡框.png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+    transition: 4s;
+}
+//開場對話框
+.bubble1{
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+}
+.bubble2{
+    position: absolute;
+    bottom: 100px;
+    left: 120px;
+    transform: scaleX(-1);
+}
+
+//後續對話框
+.bubble3{
+    position: absolute;
+    left: 530px;
+    bottom: 80px;
+    opacity: 0;
+    transform: scaleX(-1);
+    animation-name: 'bubble';
+    animation-duration: 1.5s;
+    animation-delay: 18s;
+    animation-fill-mode: forwards;
+}
+@keyframes bubble{
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.icon1, .icon2, .icon3{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+//開場對話框
+.icon1{
+    animation-name: 'icon1';
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.icon2{
+    animation-name: 'icon2';
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+//後續對話框
+.icon3{
+    background-size: unset;
+    animation-name: 'icon3';
+    animation-duration: 2s;
+    animation-delay: 17s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes icon1{
+    0%{
+        background-image: url(../img/rice.png);
+    }
+    35%{
+        background-image: url(../img/rice.png);
+    }
+    40%{
+        background-image: url(../img/ball.png);
+    }
+    70%{
+        background-image: url(../img/ball.png);
+    }
+    75%{
+        background-image: url(../img/angry.png);
+    }
+    85%{
+        background-image: url(../img/angry.png);
+    }
+    95%{
+        background-image: url(../img/angryicon.png);
+        left: 15px;
+    }
+    96%{
+        left: 10px;
+    }
+    97%{
+        left: 15px;
+    }
+    98%{
+        left: 10px;
+    }
+    100%{
+        background-image: url(../img/angryicon.png);
+        left: 15px;
+    }
+}
+
+@keyframes icon2{
+    15%{
+        background-image: url(../img/xx.png);
+    }
+    25%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    35%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    45%{
+        background-image: url(../img/xx.png);
+    }
+    50%{
+        background-image: url(../img/pizza.png);
+    }
+    80%{
+        background-image: url(../img/pizza.png);
+        bottom: 15px;
+    }
+    85%{
+        background-image: url(../img/sweat.png);
+        bottom: 20px;
+    }
+    100%{
+        background-image: url(../img/sweat.png);
+        bottom: 12px;
+    }
+}
+
+@keyframes icon3{
+    0%{
+        opacity: 0; 
+        background-image: url(../img/mark.png);
+    }
+    65%{
+        transform: rotate(0);
+    }
+    70%{
+        transform: rotate(10deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    80%{
+        transform: rotate(10deg);
+    }
+    85%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        opacity: 1;
+        background-image: url(../img/mark.png);
+    }
+}
+
+.snoopyrun, .stockrun{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    animation-delay: 12s;
+}
+
+.snoopyrun{
+    animation-name: 'snoopyrun';
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.stockrun{
+    animation-name: 'shake','move';
+    animation-duration: .5s, 10s;
+    animation-direction: alternate, normal;
+    animation-iteration-count: infinite, 1;
+    animation-fill-mode: forwards;
+    left: 500px;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+@keyframes move{
+    0%{
+        left: 50px;
+        background-image: url(../img/stock.png);
+    }
+    65%{
+        background-image: url(../img/stock.png);
+    }
+    70%{
+        left: 500px;
+        background-image: url(../img/stock2.png);
+    }
+    100%{
+        left: 450px;
+        background-image: url(../img/stock2.png);
+    }
+}
+@keyframes snoopyrun{
+    0%{
+        background-image: url(../img/snoopy.gif);
+        left: 20px;
+    }
+    48%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(90deg);
+        background-image: url(../img/snoopy.gif);
+    }
+    53%{
+        transform: rotate(0);
+        background-image: url(../img/snoopypa.png);
+        left: 350px;
+    }
+    100%{
+        background-image: url(../img/snoopypa.png);
+        left: 350px;
+    }
+}
+
+.run{
+    animation-name: 'runend';
+    animation-duration: 1s;
+    animation-delay: 22s;
+    animation-fill-mode: forwards;
+}
+@keyframes runend{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.end{
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    animation-name: end;
+    animation-duration: 1s;
+    animation-delay: 22s;
+    animation-fill-mode: forwards;
+}
+@keyframes end{
+    0%{
+        opacity: 0;
+        background-image: url(../img/end.gif);
+    }
+    100%{
+        opacity: 1;
+        background-image: url(../img/end.gif);
+    }
+}
+
+.heart1, .heart2, .heart3{
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top: -10px;
+    animation-name: 'heart';
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+@keyframes heart{
+    0%{
+        opacity: 0;
+        background-image: url(../img/heart.png);
+    }
+    100%{
+        opacity: 1;
+        background-image: url(../img/heart.png);
+    }
+}
+.heart1{
+    width: 16px;
+    height: 16px;
+    animation-delay: 22s;
+}
+.heart2{
+    width: 24px;
+    height: 24px;
+    top: -30px;
+    right: 5px;
+    animation-delay: 22.5s;
+}
+.heart3{
+    width: 32px;
+    height: 32px;
+    top: -55px;
+    right: -10px;
+    animation-delay: 23s;
+}
