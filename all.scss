@@ -60,6 +60,12 @@ img {
     background: linear-gradient(to bottom right,rgba(99, 231, 225, 0.671),rgba(54, 252, 54, 0.671));
     cursor: pointer;
     padding: 10px 0;
+    &:hover{
+        opacity: 0.7;
+    }
+    &:active{
+        opacity: 1;
+    }
 }
 
 
